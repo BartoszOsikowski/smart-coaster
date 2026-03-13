@@ -1,0 +1,34 @@
+# ----------------------------------------------------------------------------
+# ESP-IDF - Pliki kompilacji i cache
+# ----------------------------------------------------------------------------
+# Cały folder build zawiera pliki binarne (.bin, .elf), obiekty (.o) i cache CMake.
+# Musi być ignorowany, bo każdy programista (i komputer) generuje go sobie sam.
+build/
+
+# Kopie zapasowe konfiguracji generowane przez menuconfig
+sdkconfig.old
+
+# ----------------------------------------------------------------------------
+# Środowisko VS Code
+# ----------------------------------------------------------------------------
+# Ignorujemy plik c_cpp_properties.json, ponieważ zawiera on twarde ścieżki
+# do Twojego dysku (np. F:\Espressif\...), które u kogoś innego nie zadziałają.
+.vscode/c_cpp_properties.json
+
+# Jeśli nie chcesz w ogóle dzielić się ustawieniami edytora, odkomentuj poniższą linię:
+# .vscode/
+
+# ----------------------------------------------------------------------------
+# Systemy operacyjne (Windows / macOS)
+# ----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------------------------------------------------------
+# Pliki tymczasowe i logi
+# ----------------------------------------------------------------------------
+*.log
+*.tmp
+*.bak
+*.swp
