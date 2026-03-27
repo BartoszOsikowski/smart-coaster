@@ -39,13 +39,24 @@ dependencies:
     - esp32s2
     - esp32s3
     version: 1.1.0
+  garag/esp-idf-pn532:
+    component_hash: 72354942a2736b1bb95b23012c142e036732885af7b2a041484f1920cd835a8b
+    dependencies:
+    - name: idf
+      require: private
+      version: ^5.2
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 0.2.0
   idf:
     source:
       type: idf
     version: 5.5.3
 direct_dependencies:
 - esp-idf-lib/hx711
+- garag/esp-idf-pn532
 - idf
-manifest_hash: 697a800b22ca6b4a16e4672daeedcabe336caf0c5ba92c2710c20873ff3ba59b
+manifest_hash: c887815722d0829880e17d6a166373d072d3ed8e4bd1572d1259bd37387efe83
 target: esp32c3
 version: 2.0.0
